@@ -61,7 +61,6 @@ def Announcement_post(Announcement):
 
 """
 Announcement=Announcements_Check()
-News=News_check()
 for i in Announcement:
     link=i[0]
     title=i[1]
@@ -73,6 +72,7 @@ for i in Announcement:
 #text=urllib.prase.urlencode()
 
 """
+News=News_check()
 for i in News:
     link=i[0]
     img_link="iu.edu.sa/uploads/news/"+i[0].split("/")[2]+".jpg"
