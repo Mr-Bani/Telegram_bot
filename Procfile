@@ -1,1 +1,1 @@
-web: python3 functions.py
+web: python3 Functions.py
