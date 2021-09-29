@@ -66,12 +66,11 @@ for i in Announcement:
     title=i[1]
     img_link=i[2]
     caption = urllib.parse.quote("#اعلان"+"\n\n"+title + "\n\n\nhttps://iu.edu.sa" + link)
-    urlopen("https://api.telegram.org/bot2022812772:AAEjZa3mqn3FMcNjIcB5LiRikLD_XFUagnA/sendPhoto?chat_id=@testtest19129&photo={}&caption={}".format(
+    urlopen("https://api.telegram.org/bot2022812772:AAEjZa3mqn3FMcNjIcB5LiRikLD_XFUagnA/sendPhoto?chat_id=@iumedina&photo={}&caption={}".format(
             img_link,caption))
 
 #text=urllib.prase.urlencode()
 
-"""
 News=News_check()
 for i in News:
     link=i[0]
@@ -79,7 +78,5 @@ for i in News:
     title=i[1]
     caption = urllib.parse.quote("#خبر"+"\n\n"+title + "\n\n\nhttps://iu.edu.sa" + link)
     urlopen(
-        "https://api.telegram.org/bot2022812772:AAEjZa3mqn3FMcNjIcB5LiRikLD_XFUagnA/sendPhoto?chat_id=@testtest19129&photo={}&caption={}".format(
+        "https://api.telegram.org/bot2022812772:AAEjZa3mqn3FMcNjIcB5LiRikLD_XFUagnA/sendPhoto?chat_id=@iumedina&photo={}&caption={}".format(
             img_link,caption))
-
-"""
