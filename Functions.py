@@ -54,13 +54,4 @@ def News_check():
     News=list(zip(Link,Title))
     return News
 
-News=News_check()
-News.reverse()
-for i in News:
-    link=i[0]
-    img_link="iu.edu.sa/uploads/news/"+i[0].split("/")[2]+".jpg"
-    title=i[1]
-    caption = urllib.parse.quote("#خبر"+"\n\n"+title + "\n\n\nhttps://iu.edu.sa" + link)
-    urlopen(
-        "https://api.telegram.org/bot2022812772:AAEjZa3mqn3FMcNjIcB5LiRikLD_XFUagnA/sendPhoto?chat_id=@iumedina&photo={}&caption={}".format(
-            img_link,caption))
+
