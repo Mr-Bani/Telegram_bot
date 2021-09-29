@@ -59,7 +59,7 @@ def Announcement_post(Announcement):
     title=Announcement[0][1]
 
 
-"""
+
 Announcement=Announcements_Check()
 for i in Announcement:
     link=i[0]
@@ -82,3 +82,4 @@ for i in News:
         "https://api.telegram.org/bot2022812772:AAEjZa3mqn3FMcNjIcB5LiRikLD_XFUagnA/sendPhoto?chat_id=@testtest19129&photo={}&caption={}".format(
             img_link,caption))
 
+"""
