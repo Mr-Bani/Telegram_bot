@@ -72,7 +72,7 @@ for i in Announcement:
 
 #text=urllib.prase.urlencode()
 
-
+"""
 for i in News:
     link=i[0]
     img_link="iu.edu.sa/uploads/news/"+i[0].split("/")[2]+".jpg"
@@ -81,5 +81,4 @@ for i in News:
     urlopen(
         "https://api.telegram.org/bot2022812772:AAEjZa3mqn3FMcNjIcB5LiRikLD_XFUagnA/sendPhoto?chat_id=@testtest19129&photo={}&caption={}".format(
             img_link,caption))
-"""
 
