@@ -54,24 +54,6 @@ def News_check():
     News=list(zip(Link,Title))
     return News
 
-def Announcement_post(Announcement):
-    link=Announcement[0][0]
-    title=Announcement[0][1]
-
-
-
-Announcement=Announcements_Check()
-Announcement.reverse()
-for i in Announcement:
-    link=i[0]
-    title=i[1]
-    img_link=i[2]
-    caption = urllib.parse.quote("#اعلان"+"\n\n"+title + "\n\n\nhttps://iu.edu.sa" + link)
-    urlopen("https://api.telegram.org/bot2022812772:AAEjZa3mqn3FMcNjIcB5LiRikLD_XFUagnA/sendPhoto?chat_id=@iumedina&photo={}&caption={}".format(
-            img_link,caption))
-
-#text=urllib.prase.urlencode()
-
 News=News_check()
 News.reverse()
 for i in News:
